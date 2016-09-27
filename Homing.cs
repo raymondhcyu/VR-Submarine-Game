@@ -1,6 +1,8 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+// This script provides guidance/homing capabilities to the attached gameobject (torpedo prefab in this case)
+
 public class Homing : MonoBehaviour {
 
 	public Rigidbody missilePrefab; 
