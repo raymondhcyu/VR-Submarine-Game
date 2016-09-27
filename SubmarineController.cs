@@ -50,7 +50,7 @@ public class SubmarineController : MonoBehaviour {
 		// 
 	}
 
-	/*public void FireTorpedo () {
+	/*public void FireTorpedo () { // obsolete function to fire unguided torpedos
 		Vector3 torpedoFirePosition; // Vector3 is x, y, z position in space
 
 		if (numTorpedoes > 0) { // check if there's enough torpedos remaining to fire
@@ -63,11 +63,11 @@ public class SubmarineController : MonoBehaviour {
 				fireLeftTorpedo = true;
 			}
 
-			// GameObject torpedoObject = Instantiate (torpedoPrefab, torpedoFirePosition, Quaternion.identity) as GameObject; 
+			GameObject torpedoObject = Instantiate (torpedoPrefab, torpedoFirePosition, Quaternion.identity) as GameObject; 
 			// Instantiate creates object, like game object but not, on the fly, need "as GameObject" to make GameObject
 			// Instantiate = duplicate
 
-			// torpedoObject.transform.forward = (convergencePoint.position - torpedoObject.transform.position).normalized;
+			torpedoObject.transform.forward = (convergencePoint.position - torpedoObject.transform.position).normalized;
 			// "Our forward direction is.	.. and shift torp to forward direction"
 			// aka unit vector in correct direction
 
