@@ -58,7 +58,7 @@ public class Homing : MonoBehaviour {
 		}
 	}
 
-	void OnCollisionEnter (Collision thecollision){
+	void OnCollisionEnter (Collision thecollision){ // behaviour on collision with another gameobject
 		
 		if (thecollision.gameObject.name == "Cube") {
 
